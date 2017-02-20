@@ -1,6 +1,0 @@
-npm i gulp -g
-npm init
-npm i gulp --save-dev
-npm i gulp-sass --save-dev
-npm i browser-sync
-npm i del --save-dev
