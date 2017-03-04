@@ -7,15 +7,22 @@ window.onload = function() {
 }
 
 // _____________________________
+//            print
+
+document.getElementById('print').onclick = function() {
+  javascript:print(document);
+}
+
+// _____________________________
 //         infoPopup
 
-var infoPopup= document.getElementById('info-popup');
 var info = document.getElementById('info');
+var infoPopup= document.getElementById('info-popup');
 
 function show() {
   info.innerHTML='<i class="fa fa-times" aria-hidden="true"></i>';
-    infoPopup.style.padding = "17px 150px 15px 30px";
-    infoPopup.style.width = "auto";
+  infoPopup.style.padding = "17px 150px 15px 30px";
+  infoPopup.style.width = "auto";
 }
 
 function hide() {
@@ -33,4 +40,4 @@ document.getElementById('info').onclick = function() {
   else {
     hide();
   }
-};
+}
