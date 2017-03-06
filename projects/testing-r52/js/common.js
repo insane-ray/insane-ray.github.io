@@ -32,12 +32,36 @@ function hide() {
 }
 
 document.getElementById('info').onclick = function() {
-  var infoInner = document.getElementById('info').innerHTML;
+  var infoInner = this.innerHTML;
 
   if (infoInner == '<i class="fa fa-info" aria-hidden="true"></i>') {
     show();
   }
   else {
     hide();
+  }
+}
+
+// _____________________________
+//          optionStatus
+
+var checklist = document.getElementsByClassName('select');
+
+for (var i = 0; i < checklist.length ; i++) {
+  checklist[i].addEventListener("change",  option)
+}
+
+function option() {
+  if (this.options[1].selected) {
+    this.parentNode.classList.add('success');
+    this.parentNode.classList.remove('failure');
+  }
+  else if (this.options[2].selected) {
+    this.parentNode.classList.add('failure');
+    this.parentNode.classList.remove('success');
+  }
+  else {
+    this.parentNode.classList.remove('failure');
+    this.parentNode.classList.remove('success');
   }
 }
