@@ -298,12 +298,12 @@ table {
 }
 
 .number {
-  width: 8%;
+  width: 9%;
   font-weight: 500;
 }
 
 .name {
-  width: 77%;
+  width: 76%;
 }
 
 .execution {
@@ -382,9 +382,9 @@ td {
   font-size: 21px;
   padding: 6px 9px 0 0;
   color: #fafafa;
-  background-color: #51c292;
+  color: #48b989;
   top: 0;
-  left: -30px;
+  left: -25px;
 }
 
 .failure {
@@ -399,12 +399,12 @@ td {
   width: 34px;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  font-size: 34px;
+  font-size: 35px;
   padding: 5px 8px 0 0;
   color: #fafafa;
-  background-color: #f7776e;
+  color: #ed6d64;
   top: 0;
-  left: -30px;
+  left: -25px;
 }
 
 /* Blockquote! */
