@@ -1,5 +1,5 @@
 // _____________________________
-//         logoutResize
+//         Logout resize!
 
 window.onload = function() {
   var loginSize = document.getElementById('login').offsetWidth+"px";
@@ -7,14 +7,14 @@ window.onload = function() {
 }
 
 // _____________________________
-//            print
+//            Print!
 
 document.getElementById('print').onclick = function() {
   javascript:print(document);
 }
 
 // _____________________________
-//         infoPopup
+//         Info popup!
 
 var info = document.getElementById('info');
 var infoPopup= document.getElementById('info-popup');
@@ -43,7 +43,7 @@ document.getElementById('info').onclick = function() {
 }
 
 // _____________________________
-//          optionStatus
+//          Option status!
 
 var checklist = document.getElementsByClassName('select');
 
