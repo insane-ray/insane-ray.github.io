@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Тестирование сайтов</title>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4dbd91">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Bootstrap -->
+  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Header! -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left column! -->
+        <div class="col-md-8 col-lg-9">
+          <h1 id="main-page">Тестирование сайтов</h1>
+          <h2 id="sub-page">Тестирование верстки</h2>
+        </div>
+        <!-- Right column! -->
+        <div class="col-md-4 col-lg-3 user">
+          <span id="login">
+            <i class="fa fa-user" aria-hidden="true"></i> Роман Зубков
+          </span>
+          <button type="button" id="logout">
+              Выйти <i class="fa fa-sign-out" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Table! -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-wrapper">
+          <!-- Pre Table! -->
+          <div class="pre-table">
+            <!-- Buttons! -->
+            <div id="buttons-wrapper">
+              <button type="button" id="info"><i class="fa fa-info" aria-hidden="true"></i></button>
+              <button type="button" id="print">
+                <i class="fa fa-print" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div id="info-popup">
+              Варианты выполнения: да, нет, --- (не требуется)
+            </div>
+            <!-- Text! -->
+            <span class="add-checklist">
+              Добавление чек-листа
+            </span>
+            <span class="checklist-name">
+              Название сайта - название
+            </span>
+          </div>
+          <!-- Table! -->
+          <table>
+          <!-- Table Head! -->
+          <thead>
+            <tr class="table-head">
+              <th class="number">№</th>
+              <th class="name">Название</th>
+              <th class="execution">Выполнение</th>
+            </tr>
+          </thead>
+          <!-- Table Body! -->
+          <tbody>
+            <tr>
+              <th>1</th>
+              <th colspan="2">Верстка максимально соответствует макету. Моменты, в которых верстка и макет расходятся, задокументированы с указанием причины</th>
+            </tr>
+            <tr>
+              <td>1.1</td>
+              <td>Соответствие цветовой гаммы макету дизайна</td>
+              <td class="select-row">
+                <div class="select-wrapper">
+                  <select name="select" class="select">
+                    <option value="none">---</option>
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>1.2</td>
+              <td>Соответствие шрифта, размера, цвета заголовков и прочих технических элементов</td>
+              <td class="select-row">
+                <div class="select-wrapper">
+                  <select name="select" class="select">
+                    <option value="none">---</option>
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>1.3</td>
+              <td>Соответствие расположения блоков</td>
+              <td class="select-row">
+                <div class="select-wrapper">
+                  <select name="select" class="select">
+                    <option value="none">---</option>
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>1.41</td>
+              <td>Соответствие реакций ссылок, меню и прочих активных элементов</td>
+              <td class="select-row">
+                <div class="select-wrapper">
+                  <select name="select" class="select">
+                    <option value="none">---</option>
+                    <option value="yes">Да</option>
+                    <option value="no">Нет</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <th colspan="2">Общее</th>
+            </tr>
+            <tr>
+              <td>2.1</td>
+              <td>Нет заметных глазу визуальных проблем</td>
+              <td class="select-row">
+              <div class="select-wrapper">
+                <select name="select" class="select">
+                  <option value="none">---</option>
+                  <option value="yes">Да</option>
+                  <option value="no">Нет</option>
+                </select>
+              </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+          </tbody>
+          </table>
+        <div id="main-comment-warpper">
+        <span class="sign-comment">Оставить комментарий:</span>
+        <textarea id="main-comment" name="main-comment" placeholder="Введите свое сообщение"></textarea>
+        <button type="button" id="submit-form">Отправить чек-лист</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
