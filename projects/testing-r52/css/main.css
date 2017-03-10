@@ -187,7 +187,7 @@ header {
   position: relative;
   padding: 25px 20px 45px 20px;
   font-weight: 300;
-  background: #54bf95;
+  background: #4dbd91;
   height: 180px;
 }
 
@@ -328,7 +328,7 @@ th:last-child {
 .table-head th {
   color: #fafafa;
   background: #40aa81;
-  border-right: 3px solid #54bf95;
+  border-right: 4px solid #54bf95;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
