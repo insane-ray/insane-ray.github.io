@@ -106,7 +106,7 @@
             </tr>
             <tr class="row-com-wrapper">
               <td colspan="3">
-                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+                <textarea name="row-comment" class="row-comment row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
               </td>
             </tr>
             <tr>
@@ -124,7 +124,7 @@
             </tr>
             <tr class="row-com-wrapper">
               <td colspan="3">
-                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
               </td>
             </tr>
             <tr>
@@ -142,11 +142,11 @@
             </tr>
             <tr class="row-com-wrapper">
               <td colspan="3">
-                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
               </td>
             </tr>
             <tr>
-              <td>1.41</td>
+              <td>1.4</td>
               <td>Соответствие реакций ссылок, меню и прочих активных элементов</td>
               <td class="select-row">
                 <div class="select-wrapper">
@@ -160,7 +160,7 @@
             </tr>
             <tr class="row-com-wrapper">
               <td colspan="3">
-                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
               </td>
             </tr>
             <tr>
@@ -182,14 +182,104 @@
             </tr>
             <tr class="row-com-wrapper">
               <td colspan="3">
-                <textarea name="row-comment" class="row-comment" placeholder="Оставить комментарий"></textarea>
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>2.2</td>
+              <td>CSS и HTML валидируются по последним стандартам верстки</td>
+              <td class="select-row">
+              <div class="select-wrapper">
+                <select name="select" class="select">
+                  <option value="none">---</option>
+                  <option value="yes">Да</option>
+                  <option value="no">Нет</option>
+                </select>
+              </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>2.3</td>
+              <td>Оптимизация графики</td>
+              <td class="select-row">
+              <div class="select-wrapper">
+                <select name="select" class="select">
+                  <option value="none">---</option>
+                  <option value="yes">Да</option>
+                  <option value="no">Нет</option>
+                </select>
+              </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>2.4</td>
+              <td>Подсветка полей, находящихся в фокусе</td>
+              <td class="select-row">
+              <div class="select-wrapper">
+                <select name="select" class="select">
+                  <option value="none">---</option>
+                  <option value="yes">Да</option>
+                  <option value="no">Нет</option>
+                </select>
+              </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>2.5</td>
+              <td>Сверстаны все страницы, отрисованные дизайнером</td>
+              <td class="select-row">
+              <div class="select-wrapper">
+                <select name="select" class="select">
+                  <option value="none">---</option>
+                  <option value="yes">Да</option>
+                  <option value="no">Нет</option>
+                </select>
+              </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>2.6</td>
+              <td>Наличие названий и/или плейсхолдеров для полей</td>
+              <td class="select-row">
+              <div class="select-wrapper">
+                <select name="select" class="select">
+                  <option value="none">---</option>
+                  <option value="yes">Да</option>
+                  <option value="no">Нет</option>
+                </select>
+              </div>
+              </td>
+            </tr>
+            <tr class="row-com-wrapper">
+              <td colspan="3">
+                <textarea name="row-comment" class="row-comment js-elasticArea" placeholder="Оставить комментарий"></textarea>
               </td>
             </tr>
           </tbody>
           </table>
         <div id="main-comment-warpper">
         <span class="sign-comment">Оставить комментарий:</span>
-        <textarea id="main-comment" name="main-comment" placeholder="Введите свое сообщение"></textarea>
+        <textarea id="main-comment" class="js-elasticArea" name="main-comment" placeholder="Введите свое сообщение"></textarea>
         <button type="button" id="submit-form">Отправить чек-лист</button>
         </div>
         </div>
@@ -198,9 +288,12 @@
   </div>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="libs/jQuery/jquery-3.1.1.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+  <!-- Bootstrap -->
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <!-- User JS -->
   <script src="js/common.js"></script>
 </body>
 </html>

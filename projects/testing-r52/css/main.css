@@ -461,6 +461,7 @@ blockquote {
   line-height: 20px;
   -webkit-transition: 200ms ease-out;
   transition: 200ms ease-out;
+  overflow: hidden;
 }
 
 .row-comment:focus {
@@ -545,6 +546,7 @@ blockquote {
   line-height: 22px;
   -webkit-transition: 200ms ease-out;
   transition: 200ms ease-out;
+  overflow: hidden;
 }
 
 #main-comment:focus {
