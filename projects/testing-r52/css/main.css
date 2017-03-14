@@ -61,24 +61,6 @@ body {
   background: #ebebeb;
 }
 
-@-webkit-keyframes showHeader {
-  from {
-    margin-top: -192px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes showHeader {
-  from {
-    margin-top: -192px;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
 /* ___________________________________________ */
 /*                     Header!                 */
 header {
@@ -95,6 +77,24 @@ header {
   position: relative;
   margin-top: -192px;
   margin-bottom: 50px;
+}
+
+@-webkit-keyframes showHeader {
+  from {
+    margin-top: -192px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes showHeader {
+  from {
+    margin-top: -192px;
+  }
+  to {
+    margin-top: 0;
+  }
 }
 
 /* Left column! */
