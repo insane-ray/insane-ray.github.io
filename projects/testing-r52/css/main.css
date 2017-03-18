@@ -114,6 +114,9 @@ header {
   color: #212121;
   font-size: 20px;
   text-transform: lowercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   padding-bottom: 2px;
 }
 
@@ -176,7 +179,7 @@ header {
 /*                   Table!                    */
 .table-wrapper {
   width: 85%;
-  margin: 75px auto 120px auto;
+  margin: 75px auto 95px auto;
   -webkit-box-shadow: 0 2px 20px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 20px 4px rgba(0, 0, 0, 0.15);
   font-family: 'Roboto', sans-serif;
@@ -644,7 +647,7 @@ footer {
   color: #fafafa;
   padding: 50px 50px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 300;
   -webkit-box-shadow: inset 0px 12px 15px -6px rgba(0, 0, 0, 0.22);
           box-shadow: inset 0px 12px 15px -6px rgba(0, 0, 0, 0.22);
@@ -670,6 +673,46 @@ footer {
   padding-left: 5px;
 }
 
+.footer-left-side a, .footer-rigth-side a {
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-left-side a:hover, .footer-rigth-side a:hover {
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  color: #cccccc;
+}
+
+#footer-logout {
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #535151;
+  padding: 5px 8px 7px 8px;
+  margin-left: 7px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+#footer-logout:hover {
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  background: #cccccc;
+}
+
+#footer-logout:focus {
+  outline: none;
+}
+
+.footer-a-small {
+  display: none;
+}
+
 /* ___________________________________________ */
 /*                  Media!                     */
 /*==========  Desktop First  ==========*/
@@ -680,12 +723,40 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/
+  .table-wrapper {
+    width: 100%;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/
+  header {
+    height: 200px;
+  }
+  .user {
+    max-width: 100%;
+  }
+  .table-wrapper {
+    margin: 15px auto 25px auto;
+  }
+  #main-page {
+    text-align: center;
+  }
+  #sub-page {
+    text-align: center;
+  }
+  #sub-page::before {
+    content: "";
+  }
+  footer {
+    padding: 50px 20px 50px 10px;
+  }
+  .footer-a-small {
+    display: block;
+  }
+  .footer-a-big {
+    display: none;
+  }
 }
 
 /* Extra Small Devices, Phones */
