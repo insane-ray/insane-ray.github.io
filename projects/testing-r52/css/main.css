@@ -761,7 +761,12 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/
+  th {
+    padding: 12px 15px;
+  }
+  td {
+    padding: 18px 15px;
+  }
 }
 
 /* Custom, iPhone Retina */
