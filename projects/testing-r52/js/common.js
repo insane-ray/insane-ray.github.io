@@ -97,7 +97,7 @@ function option() {
 //        Ancor animate!
 
 $(document).ready(function() {
-	$('a[href^="#"]').click(function(){
+	$('a[href^="#menu"]').click(function(){
 		var el = $(this).attr('href');
 	$('body').animate({
 		scrollTop: $(el).offset().top}, 2000);
