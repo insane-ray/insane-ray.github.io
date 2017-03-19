@@ -726,6 +726,9 @@ footer {
   .table-wrapper {
     width: 100%;
   }
+  #login {
+    white-space: nowrap;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -763,16 +766,34 @@ footer {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  #logout {
+    max-width: 45px;
+  }
+  .header-logout {
+    display: none;
+  }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 505px) {
+  #main-page {
+    font-size: 25px !important;
+  }
+  #sub-page {
+    font-size: 19px !important;
+  }
   .add-checklist {
     font-size: 22px;
   }
   .checklist-name {
     font-size: 19px;
   }
-  #login {
-    width: 100%;
+  #login, #logout {
+    margin-top: 30px;
+  }
+  #buttons-wrapper, #info-popup {
+    display: none;
   }
   th {
     padding: 12px 15px;
@@ -794,6 +815,15 @@ footer {
   }
   .footer-back, .footer-up {
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #login {
+    width: 210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
