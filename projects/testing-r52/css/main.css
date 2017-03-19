@@ -780,6 +780,9 @@ footer {
   td {
     padding: 18px 15px;
   }
+  .select-row:before {
+    right: 15px;
+  }
   footer {
     padding: 50px 35px 50px 20px;
   }
