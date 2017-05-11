@@ -338,8 +338,8 @@ input[name="header__search-input"]::placeholder {
 }
 
 .carousel__item {
-  -webkit-transition: 320ms cubic-bezier(0.25, 0.1, 0.25, 1);
-  transition: 320ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-transition: 350ms ease-out;
+  transition: 350ms ease-out;
   position: relative;
   width: 370px;
   max-width: 370px;
