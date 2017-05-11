@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fall in love with Poland">
+
+    <title>Fall in love with Poland</title>
+
+    <!-- Open Graph -->
+    <meta property="og:image" content="img/og/preview.jpg">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+    <link rel="manifest" href="img/icon/manifest.json">
+    <link rel="mask-icon" href="img/icon/safari-pinned-tab.svg" color="#4dbd91">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel-2/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <button class="header__search-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <div class="header__search-wrapper">
+          <form action="action.php" name="header__search-form">
+            <input name="header__search-input" type="text" placeholder="start typing your text">
+            <button class="btn btn--header-search"><i class="fa fa-search" aria-hidden="true"></i> search</button>
+          </form>
+        </div>
+        <div class="row flex-header clearfix-off">
+          <nav>
+            <a href="#">
+              <img class="site-logo" src="img/logo.png" alt="site logo">
+              <span class="site-name">Poland</span>
+            </a>
+            <ul>
+              <li><a href="">Guide</a></li>
+              <li><a href="">Journey</a></li>
+              <li><a href="">Hotels</a></li>
+              <li><a href="">Travelers</a></li>
+              <li><button class="header__search-call"><i class="fa fa-search" aria-hidden="true"></i></button></li>
+            </ul>
+          </nav>
+          <div class="middle-block">
+          <h1>Fall in love <b>with Poland</b></h1>
+          <p class="main-desc">Best way to find your perfect place in Poland</p>
+          <button class="btn btn---header-main">search your place</button>
+          </div>
+          <p class="popular-places">Popular places to discover</p>
+        </div>
+      </div>
+    </header>
+    <section class="carousel">
+      <button class="carousel__button prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+      <button class="carousel__button next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      <div class="owl-carousel">
+        <div class="carousel__item"><p class="carousel__item-name">Sandomierz</p><p class="carousel__item-desc">Swietokrzyskie</p><button class="btn btn--item-offers">view offers</button><div class="carousel__dark-wrapper"></div><img src="img/sandomierz.jpg" alt="Sandomierz"></div>
+        <div class="carousel__item"><p class="carousel__item-name">Sopot</p><p class="carousel__item-desc">Pomorskie</p><button class="btn btn--item-offers">view offers</button><div class="carousel__dark-wrapper"></div><img src="img/sopot.jpg" alt="Sopot"></div>
+        <div class="carousel__item"><p class="carousel__item-name">Zakopane</p><p class="carousel__item-desc">Małopolskie</p><button class="btn btn--item-offers">view offers</button><div class="carousel__dark-wrapper"></div><img src="img/zakopane.jpg" alt="Zakopane"></div>
+        <div class="carousel__item"><p class="carousel__item-name">Sandomierz</p><p class="carousel__item-desc">Swietokrzyskie</p><button class="btn btn--item-offers">view offers</button><div class="carousel__dark-wrapper"></div><img src="img/sandomierz.jpg" alt="Sandomierz"></div>
+        <div class="carousel__item"><p class="carousel__item-name">Sopot</p><p class="carousel__item-desc">Pomorskie</p><button class="btn btn--item-offers">view offers</button><div class="carousel__dark-wrapper"></div><img src="img/sopot.jpg" alt="Sopot"></div>
+        <div class="carousel__item"><p class="carousel__item-name">Zakopane</p><p class="carousel__item-desc">Małopolskie</p><button class="btn btn--item-offers">view offers</button><div class="carousel__dark-wrapper"></div><img src="img/zakopane.jpg" alt="Zakopane"></div>
+      </div>
+    </section>   
+    <section class="place-to-go">
+      <div class="container">
+        <div class="row">
+          <header><h2>Where you want to go?</h2></header>
+          <form action="" name="place-to-go__search-form">
+            <input type="text" name="place-to-go__search-places" placeholder="Search place">
+            <button class="place-to-go__search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+          <div id="filters" class="place-to-go__buttons clearfix">
+            <button class="type is-checked" data-filter=".journey">Journey</button>
+            <button class="type" data-filter=".travelers">Travelers</button>
+            <button class="type" data-filter=".guide">Guide</button>           
+            <button class="place" data-filter=".wroclaw">Wroclaw</button>
+            <button class="place" data-filter=".warsaw">Warsaw</button>
+            <button class="place" data-filter=".poznan">Poznan</button>
+          </div>
+          <div class="place-to-go__grid">
+            <div class="place-to-go__item journey poznan" data-category="journey"><img src="img/poznan.jpg" alt="Poznan"><p class="place-to-go__item-name">Poznan</p><p class="place-to-go__item-desc">Wielkopolskie</p><button class="btn btn--place-to-go">view offers</button></div>                       
+            <div class="place-to-go__item journey warsaw" data-category="journey"><img src="img/warsaw.jpg" alt="Warsaw"><p class="place-to-go__item-name">Warsaw</p><p class="place-to-go__item-desc">Mazowieckie</p><button class="btn btn--place-to-go">view offers</button></div>                       
+            <div class="place-to-go__item journey wroclaw" data-category="journey"><img src="img/wroclaw.jpg" alt="Wroclaw"><p class="place-to-go__item-name">Wroclaw</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div>                       
+            <div class="place-to-go__item journey karpacz" data-category="journey"><img src="img/karpacz.jpg" alt="Karpacz"><p class="place-to-go__item-name">Karpacz</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div>                       
+            <div class="place-to-go__item journey dolina-olczyska" data-category="journey"><img src="img/dolina-olczyska.jpg" alt="Dolina Olczyska"><p class="place-to-go__item-name">Dolina Olczyska</p><p class="place-to-go__item-desc">Malopolskie</p><button class="btn btn--place-to-go">view offers</button></div>                          
+            <div class="place-to-go__item journey kozy" data-category="journey"><img src="img/kozy.jpg" alt="Kozy"><p class="place-to-go__item-name">Kozy</p><p class="place-to-go__item-desc">Slaskie</p><button class="btn btn--place-to-go">view offers</button></div> 
+
+            <div class="place-to-go__item travelers poznan" data-category="travelers"><img src="img/poznan-cathedral.jpg" alt="Poznan Cathedral"><p class="place-to-go__item-name">Poznan Cathedral</p><p class="place-to-go__item-desc">Wielkopolskie</p><button class="btn btn--place-to-go">view offers</button></div>    
+            <div class="place-to-go__item travelers warsaw" data-category="travelers"><img src="img/warsaw-royal-castle.jpg" alt="Warsaw Royal Castlel"><p class="place-to-go__item-name">Warsaw Royal Castlel</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div>
+            <div class="place-to-go__item travelers wroclaw" data-category="travelers"><img src="img/warsaw-royal-palace.jpg" alt="Wroclaw Royal Palace"><p class="place-to-go__item-name">Wroclaw Royal Palace</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div>
+            <div class="place-to-go__item travelers karpacz" data-category="travelers"><img src="img/karpacz.jpg" alt="Karpacz"><p class="place-to-go__item-name">Karpacz Travel</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div>                       
+            <div class="place-to-go__item travelers dolina-olczyska" data-category="travelers"><img src="img/dolina-olczyska.jpg" alt="Dolina Olczyska"><p class="place-to-go__item-name">Olczyska Travel</p><p class="place-to-go__item-desc">Malopolskie</p><button class="btn btn--place-to-go">view offers</button></div>                          
+            <div class="place-to-go__item travelers kozy" data-category="travelers"><img src="img/kozy.jpg" alt="Kozy"><p class="place-to-go__item-name">Kozy Travel</p><p class="place-to-go__item-desc">Slaskie</p><button class="btn btn--place-to-go">view offers</button></div>      
+
+            <div class="place-to-go__item guide poznan" data-category="guide"><img src="img/poznan-town-hall.jpg" alt="Poznan Town Hall"><p class="place-to-go__item-name">Poznan Town Hall</p><p class="place-to-go__item-desc">Wielkopolskie</p><button class="btn btn--place-to-go">view offers</button></div>    
+            <div class="place-to-go__item guide warsaw" data-category="guide"><img src="img/warsaw-museum.jpg" alt="Warsaw Museum"><p class="place-to-go__item-name">Warsaw Museum</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div> 
+            <div class="place-to-go__item guide wroclaw" data-category="guide"><img src="img/wroclaw-synagogue.jpg" alt="Wroclaw Synagogue"><p class="place-to-go__item-name">Wroclaw Synagogue</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div>    
+            <div class="place-to-go__item guide karpacz" data-category="guide"><img src="img/karpacz.jpg" alt="Karpacz"><p class="place-to-go__item-name">Karpacz Guide</p><p class="place-to-go__item-desc">Dolnoslaskie</p><button class="btn btn--place-to-go">view offers</button></div>                       
+            <div class="place-to-go__item guide dolina-olczyska" data-category="tguide"><img src="img/dolina-olczyska.jpg" alt="Dolina Olczyska"><p class="place-to-go__item-name">Olczyska Guide</p><p class="place-to-go__item-desc">Malopolskie</p><button class="btn btn--place-to-go">view offers</button></div>                          
+            <div class="place-to-go__item guide kozy" data-category="guide"><img src="img/kozy.jpg" alt="Kozy"><p class="place-to-go__item-name">Kozy Guide</p><p class="place-to-go__item-desc">Slaskie</p><button class="btn btn--place-to-go">view offers</button></div>             
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="explore-city">
+      <div class="container">
+        <div class="row">
+          <header>
+            <h2>Explore city</h2>
+          </header>
+          <div class="col-md-6">
+            <h3 class="explore-city__text-header">Sandomierz</h3>
+            <div class="explore-city__text-wrapper">
+              <p class="explore-city__text">
+                Sandomierz is one of the oldest and historically most significant cities in Poland. Archeological finds around the city indicate that humans have inhabited the area since neolithic times. The city came into existence in the early Middle Ages, taking advantage of an excellent location at the junction of Vistula and San rivers, and on the path of important trade routes. 
+               </p>
+               <p class="explore-city__text">
+                The first known historical mention of the city comes from the early 12th-century, when the chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main cities of Poland. The testament (ca 1115-1118) of Bolesław III Wrymouth, in which he divided Poland among his sons, designated Sandomierz as the capital of one of the resulting principalities, the Duchy of Sandomierz.
+                </p>
+              </div>
+              <button class="btn btn--explore-city__button">CHECK OFFERS</button>
+          </div>
+          <div class="col-md-6">
+            <div class="explore-city__photo ">
+             <img src="img/explore-city-photo.jpg" alt="Explore city photo">
+            </div>
+          </div>
+       </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="plugins/owl-carousel-2/owl.carousel.min.js"></script>
+    <script src="plugins/isotope/isotope.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
