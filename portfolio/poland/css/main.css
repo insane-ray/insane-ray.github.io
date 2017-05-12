@@ -176,6 +176,11 @@ nav ul li:last-child {
   padding-bottom: 42px;
 }
 
+.popular-places .fa {
+  padding-left: 3px;
+  font-size: 1.2em;
+}
+
 .header__search-wrapper {
   -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
@@ -338,8 +343,9 @@ input[name="header__search-input"]::placeholder {
 }
 
 .carousel__item {
-  -webkit-transition: 350ms ease-out;
-  transition: 350ms ease-out;
+  overflow: hidden;
+  -webkit-transition: 280ms ease-in-out;
+  transition: 280ms ease-in-out;
   position: relative;
   width: 370px;
   max-width: 370px;
@@ -358,7 +364,7 @@ input[name="header__search-input"]::placeholder {
 .carousel__item:hover .carousel__item-name {
   -webkit-transition: inherit;
   transition: inherit;
-  font-size: 48px;
+  font-size: 35px;
   top: 183px;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -428,7 +434,7 @@ input[name="header__search-input"]::placeholder {
   -webkit-transition: inherit;
   transition: inherit;
   position: absolute;
-  top: 380px;
+  top: 480px;
   margin-left: 70px;
   opacity: 0;
 }
@@ -457,7 +463,13 @@ form[name="place-to-go__search-form"] {
   margin: 0 auto 20px auto;
 }
 
+.header__search-wrapper form[name="place-to-go__search-form"] {
+  margin-top: 30vh;
+}
+
 input[name="place-to-go__search-places"] {
+  -webkit-transition: 170ms ease-in-out;
+  transition: 170ms ease-in-out;
   display: block;
   height: 60px;
   width: 100%;
@@ -472,6 +484,23 @@ input[name="place-to-go__search-places"] {
 }
 
 input[name="place-to-go__search-places"]:focus {
+  -webkit-transition: 170ms ease-in-out;
+  transition: 170ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 85px 0px rgba(141, 148, 169, 0.3);
+          box-shadow: 0px 0px 85px 0px rgba(141, 148, 169, 0.3);
+  outline: none;
+}
+
+.header__search-wrapper input[name="place-to-go__search-places"] {
+  -webkit-box-shadow: 0px 0px 85px 0px rgba(43, 43, 43, 0.3);
+          box-shadow: 0px 0px 85px 0px rgba(43, 43, 43, 0.3);
+}
+
+.header__search-wrapper input[name="place-to-go__search-places"]:focus {
+  -webkit-transition: 170ms ease-in-out;
+  transition: 170ms ease-in-out;
+  -webkit-box-shadow: 0px 0px 85px 0px rgba(81, 88, 109, 0.3);
+          box-shadow: 0px 0px 85px 0px rgba(81, 88, 109, 0.3);
   outline: none;
 }
 
@@ -619,7 +648,7 @@ input[name="place-to-go__search-places"]:focus {
 /* --- Explore cuty --- */
 .explore-city {
   color: #606f81;
-  background: #f8f9fb;
+  background: url(../img/explore-city-bg.jpg) center right;
   height: 895px;
 }
 
@@ -661,10 +690,6 @@ input[name="place-to-go__search-places"]:focus {
 .btn--explore-city__button:hover {
   -webkit-transition: 170ms ease-in-out;
   transition: 170ms ease-in-out;
-}
-
-.explore-city__photo {
-  background: url(../img/explore-city-bg.jpg) no-repeat center right/cover;
 }
 
 .explore-city__photo img {

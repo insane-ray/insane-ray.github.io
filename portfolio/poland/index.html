@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/owl-carousel-2/owl.carousel.min.css">
-    <link rel="stylesheet" href="plugins/owl-carousel-2/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -30,9 +29,9 @@
       <div class="container-fluid">
         <button class="header__search-close"><i class="fa fa-times" aria-hidden="true"></i></button>
         <div class="header__search-wrapper">
-          <form action="action.php" name="header__search-form">
-            <input name="header__search-input" type="text" placeholder="start typing your text">
-            <button class="btn btn--header-search"><i class="fa fa-search" aria-hidden="true"></i> search</button>
+          <form action="" name="place-to-go__search-form">
+            <input type="text" name="place-to-go__search-places" placeholder="Search place">
+            <button class="place-to-go__search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </div>
         <div class="row flex-header clearfix-off">
@@ -52,9 +51,9 @@
           <div class="middle-block">
           <h1>Fall in love <b>with Poland</b></h1>
           <p class="main-desc">Best way to find your perfect place in Poland</p>
-          <button class="btn btn---header-main">search your place</button>
+          <a href=".place-to-go" class="search-place-a"><button class="btn btn---header-main">search your place</button></a>
           </div>
-          <p class="popular-places">Popular places to discover</p>
+          <p class="popular-places">Popular places to discover <i class="fa fa-chevron-down" aria-hidden="true"></i></p>
         </div>
       </div>
     </header>
