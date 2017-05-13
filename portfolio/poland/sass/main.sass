@@ -42,7 +42,8 @@ section header
 .btn
 	display: block
 	border-radius: 25px
-	width: 233px
+	//width: 233px
+	padding: 0 40px
 	height: 52px
 	margin: 0 auto
 	background: #ffc74a
@@ -299,7 +300,7 @@ input[name="header__search-input"]
 	z-index: 901
 	transition: inherit
 	position: absolute
-	top: 319px
+	top: 309px
 	width: 100%
 	text-align: center
 	font-size: 30px
@@ -489,6 +490,7 @@ input[name="place-to-go__search-places"]
 		font-weight: bold
 
 .explore-city__text-header
+	width: 100%
 	color: #f8c759
 	font-size: 36px
 	padding: 46px 19px
@@ -504,7 +506,6 @@ input[name="place-to-go__search-places"]
 	padding: 
 		bottom: 40px
 	line-height: 28px
-	//font-weight: bold
 
 .btn--explore-city__button
 	margin: 20px 0
@@ -512,9 +513,11 @@ input[name="place-to-go__search-places"]
 	&:hover
 		transition: 170ms ease-in-out
 
+.image-link
+	cursor: zoom-in
+
 .explore-city__photo
 	& img
-		width: 100%
 		height: auto
 		height: 555px
 		width: 570px
@@ -531,6 +534,117 @@ input[name="place-to-go__search-places"]
 		height: 565px
 		width: 587px
 		border: 12px solid #ffc74a
-		//background: red
 
-@import "media" 
+/* --- Enjoy your journey --- */
+
+.enjoy-journey
+	height: 640px
+	width: 100%
+	background: url(../img/enjoy-journey.jpg) center center /cover
+
+.enjoy-journey__header
+	font-size: 92px
+	font-weight: bold
+	text-align: center
+	padding-top: 190px
+
+.btn--enjoy-journey
+	transition: 170ms ease-in-out
+	margin-top: 40px
+	&:hover
+
+
+.enjoy-journey__newsletter
+	font-size: 19px
+	text-align: center
+	padding-top: 48px
+
+.enjoy-journey__link
+	transition: 170ms ease-in-out
+	color: #ffc74a
+	text-decoration: underline
+	&:hover
+		transition: 170ms ease-in-out
+		text-decoration: none
+		color: darken(#ffc74a, 20%)
+	&:visited
+		color: #ffc74a
+		text-decoration: underline 
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1270px) 
+	.explore-city__photo
+		& img
+			width: 100%
+			height: auto
+		&:after 
+			display: none
+
+@media only screen and (max-width: 1200px) 
+	.explore-city
+		height: auto
+		background: #f8f9fb
+
+	.place-to-go__item 
+		width: 304px 
+
+	.explore-city__text-header
+		font-size: 36px
+		padding: 0 0 20px 0
+
+	.explore-city__text
+		color: #606f81
+		font-size: 14px
+		padding: 
+			bottom: 20px
+
+	.btn--explore-city__button
+		margin: 10px 0 60px 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

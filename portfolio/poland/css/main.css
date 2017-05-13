@@ -44,7 +44,7 @@ section header {
   display: block;
   -webkit-border-radius: 25px;
           border-radius: 25px;
-  width: 233px;
+  padding: 0 40px;
   height: 52px;
   margin: 0 auto;
   background: #ffc74a;
@@ -409,7 +409,7 @@ input[name="header__search-input"]::placeholder {
   -webkit-transition: inherit;
   transition: inherit;
   position: absolute;
-  top: 319px;
+  top: 309px;
   width: 100%;
   text-align: center;
   font-size: 30px;
@@ -662,6 +662,7 @@ input[name="place-to-go__search-places"]:focus {
 }
 
 .explore-city__text-header {
+  width: 100%;
   color: #f8c759;
   font-size: 36px;
   padding: 46px 19px;
@@ -690,8 +691,12 @@ input[name="place-to-go__search-places"]:focus {
   transition: 170ms ease-in-out;
 }
 
+.image-link {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
 .explore-city__photo img {
-  width: 100%;
   height: auto;
   height: 555px;
   width: 570px;
@@ -712,10 +717,83 @@ input[name="place-to-go__search-places"]:focus {
   border: 12px solid #ffc74a;
 }
 
+/* --- Enjoy your journey --- */
+.enjoy-journey {
+  height: 640px;
+  width: 100%;
+  background: url(../img/enjoy-journey.jpg) center center/cover;
+}
+
+.enjoy-journey__header {
+  font-size: 92px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 190px;
+}
+
+.btn--enjoy-journey {
+  -webkit-transition: 170ms ease-in-out;
+  transition: 170ms ease-in-out;
+  margin-top: 40px;
+}
+
+.enjoy-journey__newsletter {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 48px;
+}
+
+.enjoy-journey__link {
+  -webkit-transition: 170ms ease-in-out;
+  transition: 170ms ease-in-out;
+  color: #ffc74a;
+  text-decoration: underline;
+}
+
+.enjoy-journey__link:hover {
+  -webkit-transition: 170ms ease-in-out;
+  transition: 170ms ease-in-out;
+  text-decoration: none;
+  color: #e39d00;
+}
+
+.enjoy-journey__link:visited {
+  color: #ffc74a;
+  text-decoration: underline;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1270px) {
+  .explore-city__photo img {
+    width: 100%;
+    height: auto;
+  }
+  .explore-city__photo:after {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
-  /**/
+  .explore-city {
+    height: auto;
+    background: #f8f9fb;
+  }
+  .place-to-go__item {
+    width: 304px;
+  }
+  .explore-city__text-header {
+    font-size: 36px;
+    padding: 0 0 20px 0;
+  }
+  .explore-city__text {
+    color: #606f81;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .btn--explore-city__button {
+    margin: 10px 0 60px 0;
+  }
 }
 
 /* Medium Devices, Desktops */

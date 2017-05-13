@@ -53,6 +53,22 @@ var scroll_el = $(this).attr('href'); // возьмем содержимое а�
     return false; // выключаем стандартное действие
 });
 
+$('.image-link').magnificPopup({
+	type:'image',
+	 mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+  	zoom: {
+    enabled: true, 
+    duration: 300, 
+    easing: 'ease-in-out', 
+
+    opener: function(openerElement) {
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+
+});
+
 /* --- Isotope --- */
 
 setTimeout(function() {
