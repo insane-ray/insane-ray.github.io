@@ -380,7 +380,6 @@ input[name="header__search-input"]::placeholder {
   -webkit-transition: inherit;
   transition: inherit;
   top: 340px;
-  opacity: 1;
 }
 
 .carousel__item:hover .carousel__dark-wrapper {
@@ -434,9 +433,8 @@ input[name="header__search-input"]::placeholder {
   -webkit-transition: inherit;
   transition: inherit;
   position: absolute;
-  top: 480px;
+  top: 550px;
   margin-left: 70px;
-  opacity: 0;
 }
 
 /* --- Place to go --- */
