@@ -775,16 +775,19 @@ input[name="place-to-go__search-places"]:focus {
 }
 
 @media only screen and (max-width: 1200px) {
+  .place-to-go__item {
+    width: 304px;
+  }
+  .place-to-go__item-name {
+    font-size: 25px;
+  }
   .explore-city {
     height: auto;
     background: #f8f9fb;
   }
-  .place-to-go__item {
-    width: 304px;
-  }
   .explore-city__text-header {
     font-size: 36px;
-    padding: 0 0 20px 0;
+    padding: 20px 0 20px 0;
   }
   .explore-city__text {
     color: #606f81;
@@ -798,22 +801,57 @@ input[name="place-to-go__search-places"]:focus {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/
+  .place-to-go__item {
+    width: 361px;
+  }
+  .place-to-go__item-name {
+    font-size: 25px;
+  }
+  .place-to-go__buttons {
+    width: 100%;
+  }
+  form[name="place-to-go__search-form"] {
+    width: 100%;
+    max-width: 80%;
+  }
+  .explore-city__photo img {
+    position: static;
+  }
+  header h1 {
+    font-size: 72px;
+  }
+  .main-desc {
+    font-size: 15px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/
+  header h1 {
+    font-size: 62px;
+    line-height: 77px;
+  }
+  .btn---header-main {
+    font-size: 12px;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/
+  header h1 {
+    font-size: 47px;
+    line-height: 57px;
+  }
+  .main-desc {
+    font-size: 14px;
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/
+  header h1 {
+    font-size: 37px;
+  }
 }
 
 /*==========  Mobile First  ==========*/

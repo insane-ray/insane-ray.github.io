@@ -92,5 +92,5 @@ setTimeout(function() {
 	    $( this ).addClass('is-checked');
 	  });
 	});
-}, 700);
+}, 900);
 
