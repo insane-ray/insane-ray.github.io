@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "..\\src\\components\\Navbar.svelte"
+  ],
+  "sourcesContent": [
+    "<style>\r\n    nav {\r\n        position: fixed;\r\n        top: 0px;\r\n    }\r\n</style>\r\n\r\n<nav>\r\n    <div class=\"nav-wrapper\">\r\n        <span class=\"brand-logo right\">Logo</span>\r\n        <ul class=\"left\">\r\n            <li><a href=\"sass.html\">Sass</a></li>\r\n            <li><a href=\"badges.html\">Components</a></li>\r\n            <li><a href=\"collapsible.html\">JavaScript</a></li>\r\n        </ul>\r\n    </div>\r\n</nav>"
+  ],
+  "names": [],
+  "mappings": "AACI,GAAG,eAAC,CAAC,AACD,QAAQ,CAAE,KAAK,CACf,GAAG,CAAE,GAAG,AACZ,CAAC"
+}
