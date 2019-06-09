@@ -2,8 +2,41 @@
 	margin-top: 64px;
 }
 
-.brand-logo {
-	width: 64px;
-	height: 64px;
-	background-image: url(/images/logo.png);
+.page-header {
+	transition: 250ms ease;
 }
+
+.card .card-content .card-header {
+	font-size: 1.3em;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 12px;
+	margin-bottom: 12px
+}
+
+.collection {
+	border: none;
+}
+
+.collection .collection-item.avatar {
+	margin-top: 8px
+}
+
+.collection .collection-btn {
+	margin-top: -12px;
+}
+
+.collection .title {
+	font-size: 1.2em;
+	font-weight: 500;
+
+}
+
+.collection .text {
+	padding-top: 12px;
+}
+
+/* @media screen and (min-width: 1260px) {
+	.wrapper {
+		height: calc(100vh - 281px);
+	}
+} */

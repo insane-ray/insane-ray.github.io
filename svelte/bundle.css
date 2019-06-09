@@ -1,5 +1,6 @@
-nav.svelte-8aa715{position:fixed;top:0px;line-height:58px}.nav-wrapper.svelte-8aa715 .menu.svelte-8aa715{margin-left:-15px}.nav-wrapper.svelte-8aa715 .brand-logo.svelte-8aa715{width:50px;height:50px;margin:7px 10px 7px 0;background-size:cover;background-image:url(/images/logo.png)}.nav-wrapper.svelte-8aa715{margin-left:px}.nav-wrapper.svelte-8aa715 .left>span.svelte-8aa715,.nav-wrapper.svelte-8aa715 .center>span.svelte-8aa715{font-size:1.4em}.nav-wrapper.svelte-8aa715 .material-icons.svelte-8aa715{display:inline-block
-    }.nav-wrapper.svelte-8aa715 .sidenav-trigger.svelte-8aa715{display:inline-block
-    }
+nav.svelte-1yg59vu{position:fixed;top:0px;line-height:58px;z-index:3}.nav-wrapper.svelte-1yg59vu .brand-logo.svelte-1yg59vu{cursor:pointer;width:50px;height:50px;margin:7px 10px 7px 0;background-size:cover;background-image:url(images/logo.png)}.nav-wrapper.svelte-1yg59vu{margin-left:px}.nav-wrapper.svelte-1yg59vu .center>span.svelte-1yg59vu{font-size:1.4em}.nav-wrapper.svelte-1yg59vu .material-icons.svelte-1yg59vu{display:inline-block
+    }.nav-wrapper.svelte-1yg59vu .sidenav-trigger.svelte-1yg59vu{display:inline-block
+    }@media screen and (max-width: 600px){.nav-wrapper.svelte-1yg59vu .brand-logo.svelte-1yg59vu{height:42px;width:42px}.nav-wrapper.svelte-1yg59vu .welcome.svelte-1yg59vu{display:none}}
+.news-image.svelte-hzj860{height:140px;width:100%;background-position:center;background-size:cover}.card.svelte-hzj860 .card-action a.svelte-hzj860:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){color:#424242}.card.svelte-hzj860 .card-action a.svelte-hzj860:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover{color:#9e9e9e}
 
 /*# sourceMappingURL=bundle.css.map */
