@@ -1,0 +1,53 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Amatic SC', cursive;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown__header,
+.countdown__content {
+    color: #eeeeee;
+}
+
+.countdown__header {
+    font-size: 100px;
+}
+
+.countdown__content {
+    font-size: 270px;
+}
+
+@media (max-width: 900px) {
+    .countdown__header {
+        font-size: 75px;
+    }
+
+    .countdown__content {
+        font-size: 200px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .countdown__header {
+        font-size: 60px;
+    }
+
+    .countdown__content {
+        font-size: 160px;
+    }
+}
+
+@media (max-width: 550px) {
+    .countdown__header {
+        font-size: 50px;
+    }
+
+    .countdown__content {
+        font-size: 135px;
+    }
+}
