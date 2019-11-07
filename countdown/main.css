@@ -10,6 +10,7 @@ body {
 
 .countdown__header,
 .countdown__content {
+    text-align: center;
     color: #eeeeee;
 }
 
@@ -18,7 +19,7 @@ body {
 }
 
 .countdown__content {
-    font-size: 270px;
+    font-size: 275px;
 }
 
 @media (max-width: 900px) {
@@ -27,7 +28,7 @@ body {
     }
 
     .countdown__content {
-        font-size: 200px;
+        font-size: 205px;
     }
 }
 
@@ -38,7 +39,7 @@ body {
     }
 
     .countdown__content {
-        font-size: 160px;
+        font-size: 165px;
     }
 }
 
@@ -48,6 +49,6 @@ body {
     }
 
     .countdown__content {
-        font-size: 135px;
+        font-size: 140px;
     }
 }
