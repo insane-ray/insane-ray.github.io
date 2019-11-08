@@ -11,23 +11,24 @@ var x = setInterval(function() {
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + (days * 24);
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if (distance >= 0) {
 
-    hours = (hours < 10) ? '0' + hours : hours;
-    minutes = (minutes < 10) ? '0' + minutes : minutes;
-    seconds = (seconds < 10) ? '0' + seconds : seconds;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + (days * 24);
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result in the element
-    document.querySelector(".countdown__content").innerHTML =  hours + ":" + minutes + ":" + seconds;
+        hours = (hours < 10) ? '0' + hours : hours;
+        minutes = (minutes < 10) ? '0' + minutes : minutes;
+        seconds = (seconds < 10) ? '0' + seconds : seconds;
 
-    // TODO at the end
-    // If the count down is finished, write some text
-    // if (distance < 0) {
-    //     clearInterval(x);
-    //     document.getElementById(".countdown__content").innerHTML = "Повздравляю";
-    // }
+        // Display the result in the element
+        document.querySelector(".countdown__header").innerHTML = "Кристиночка, держисб";
+        document.querySelector(".countdown__content").innerHTML =  hours + ":" + minutes + ":" + seconds;
+    } else {
+        document.querySelector(".countdown__header").innerHTML = "Кристиночка, <br> Повздравляю";
+        document.querySelector(".countdown__content").innerHTML = "";
+        clearInterval(x);
+    }
 }, 1000);
